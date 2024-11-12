@@ -1,6 +1,6 @@
 import './App.css'
 import './components/Profile';
-import userData from "../userData.json";
+import userData from "./userData.json";
 import Profile  from './components/Profile';
 
 
