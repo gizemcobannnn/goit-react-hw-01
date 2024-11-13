@@ -12,11 +12,12 @@ import TransactionHistory from './components/TransactionHistory';
 const App = () => {
   return (
     <>
-      <Profile
-        name={userData.username}
+        
+        <Profile
+        username={userData.username}
         tag={userData.tag}
         location={userData.location}
-        image={userData.avatar}
+        avatar={userData.avatar}
         stats={userData.stats}
       />
       <FriendList friends={friends} />
