@@ -1,6 +1,5 @@
-// FriendListItem.jsx
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 function FriendListItem({ avatar, name, isOnline }) {
   return (
     <div className="friend-item">
@@ -13,4 +12,11 @@ function FriendListItem({ avatar, name, isOnline }) {
   );
 }
 
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+};
+
 export default FriendListItem;
+
