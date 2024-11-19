@@ -1,0 +1,12 @@
+.pname{
+    font-weight:600
+}
+
+.status-online {
+    color: green;
+  }
+  
+  .status-offline {
+    color: red;
+  }
+  

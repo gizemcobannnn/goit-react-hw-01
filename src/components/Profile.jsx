@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import Styles from './Profile.module.css';
 const Profile = ({
   username = "Unknown",
   tag = "",
@@ -15,23 +15,23 @@ const Profile = ({
           alt="User avatar"
           height="200px"
         />
-        <p style={{ fontWeight: 900 }}>{username}</p>
-        <p style={{ color: "grey" }}>@{tag}</p>
-        <p style={{ color: "grey" }}>{location}</p>
+        <p className={Styles.pUser}>{username}</p>
+        <p className={Styles.pGrey}>@{tag}</p>
+        <p className={Styles.pGrey}>{location}</p>
       </div>
 
-      <ul className="ul-post" style={{ listStyle: "none" }}>
+      <ul className={Styles.ulPost} >
         <li className="li-post">
-          <span>Followers: </span>
-          <span style={{ fontWeight: 600 }}>{stats.followers}</span>
+          <span>Followers </span>
+          <span className={Styles.textPost}>{stats.followers}</span>
         </li>
         <li className="li-post">
-          <span>Views: </span>
-          <span style={{ fontWeight: 600 }}>{stats.views}</span>
+          <span>Views </span>
+          <span className={Styles.textPost}>{stats.views}</span>
         </li>
         <li className="li-post">
-          <span>Likes: </span>
-          <span style={{ fontWeight: 600 }}>{stats.likes}</span>
+          <span>Likes </span>
+          <span className={Styles.textPost}>{stats.likes}</span>
         </li>
       </ul>
     </div>

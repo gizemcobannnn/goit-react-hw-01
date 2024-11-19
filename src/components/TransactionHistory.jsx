@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-
+import Sytles from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ transactions=[]}) => {
     return (
-      <table style={{ margin: "0 auto", borderCollapse: "collapse", width: "80%" }}>
+      <table className={Sytles.transaction}>
         <thead>
           <tr>
             <th style={{ border: "1px solid #ddd", color:"white",background:"black", padding: "8px" }}>Type</th>
